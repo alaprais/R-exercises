@@ -9,3 +9,6 @@ dice_roller <- function(n){
 
 result <- table(dice_roller(1000000))
 barplot(result)
+
+
+# 2
