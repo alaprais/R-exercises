@@ -34,6 +34,31 @@ mean(unfair_coin_games(10000))
 
 
 #3
+# Simulate an experiment of throwing one dice 
+# 30 times using the function rmultinom, and find out how many 6's are in the simulated sample
+throws <- rmultinom(1,size=30, prob = rep(1/6,6))
+throws[6]
 
 
 
+#4
+# Obtain a vector that shows how many 1's, 2's,..6's were obtained in the previous simulation
+throws
+
+
+
+#5
+# Simulate normal distribution values. Imagine a population 
+# in which the average height is 1.70 m with a standard deviation of 0.1. 
+# Use rnorm to simulate the height of 1000 people and save it in an object called heights.
+
+heights <- rnorm(n=1000,mean=1.7,sd=0.1)
+
+# a) Plot the density of the simulated values.
+plot(density(heights))
+
+# b) Generate 10000 values with the same parameters and plot the respective density
+# function on top of the previous plot in red to differentiate it.
+
+heights_2 <- rnorm(n=10000,mean=1.7,sd=0.1)
+lines(density(heights_2), col = "red")
