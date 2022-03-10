@@ -1,2 +1,2 @@
 # R-exercises
-Repo for misc R-related practice
+Repo for data viz, exploring new packages, and misc playground activities
